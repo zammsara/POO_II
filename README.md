@@ -8,15 +8,19 @@
 Repositorio con ejercicios, prácticas y proyectos desarrollados durante el curso.
 </p>
 
-<p align="center">
+---
+
 ## Contenido
-- Ejercicios prácticos
-- Tareas del curso
-- Proyectos desarrollados en clase
-- Ejemplos de código
+
+- Ejercicios prácticos  
+- Tareas del curso  
+- Proyectos desarrollados en clase  
+- Ejemplos de código  
 
 ## Estructura del repositorio
-/ejercicios → Ejercicios de práctica  
-/proyectos → Proyectos del curso  
-/tareas → Tareas asignadas  
-</p>
+
+```
+/ejercicios   → Ejercicios de práctica  
+/proyectos    → Proyectos del curso  
+/tareas       → Tareas asignadas  
+```
