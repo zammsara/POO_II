@@ -53,26 +53,26 @@ fun PrideScreen() {
     }
 
     ///+++++++++++++++++++++++++FRASES+++++++++++++++++++++++++++
-    val frasesTriste = listOf(
-        "%s, incluso en la tristeza, su valor es admirable.",
-        "No todo está perdido, %s.",
-        "%s, permítame ofrecerle consuelo."
+   val frasesDeBuenAnimo = listOf(
+        "La alegría le sienta admirablemente bien, %s.",
+        "Confieso que encuentro su espíritu particularmente encantador hoy, %s.",
+        "%s, su buen ánimo me complace profundamente."
     )
 
-    val frasesFeliz = listOf(
-        "%s, su alegría es verdaderamente encantadora.",
-        "Nada me complace más que verla feliz, %s.",
-        "%s, su sonrisa ilumina todo."
+    val frasesMelancolica = listOf(
+        "No ceda al desaliento, %s; días más amables pueden aguardarle.",
+        "%s, incluso en la melancolía, hay mucho en usted digno de admiración.”",
+        "No permita, %s, que la tristeza le haga olvidar su propio valor."
     )
 
-    val fraseEspecial =
+    val fraseHechizada =
         "You have bewitched me, body and soul, and I love, I love, I love you."
 
     //+++++EMOCIONES+++++++++++
     val emociones = listOf(
-        "Triste",
-        "Feliz",
-        "Especial"
+        "De buen ánimo",
+        "Melancólica",
+        "Hechizada"
     )
 
 
@@ -245,19 +245,19 @@ fun PrideScreen() {
                             // Cambio de retrato + consejo
                             val quote = when (emocion) {
 
-                                "Triste" -> {
-                                    imageRes = R.drawable.darcy_triste
-                                    frasesTriste.random().format(nombre)
+                                "De buen ánimo" -> {
+                                    imageRes = R.drawable.darcy_feliz
+                                    frasesDeBuenAnimo.random().format(nombre)
                                 }
 
-                                "Feliz" -> {
-                                    imageRes = R.drawable.darcy_feliz
-                                    frasesFeliz.random().format(nombre)
+                                "Melancólica" -> {
+                                    imageRes = R.drawable.darcy_triste
+                                    frasesMelancolica.random().format(nombre)
                                 }
 
                                 else -> {
                                     imageRes = R.drawable.darcy_especial
-                                    fraseEspecial
+                                    fraseHechizada
                                 }
                             }
 
